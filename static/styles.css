@@ -1,0 +1,461 @@
+/* Basic styling for the layout */
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap');
+
+* {
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-family: 'Baloo Bhai 2', cursive;
+
+}
+
+header {
+    background-color: #00a99d;
+    color: #131313;
+    text-align: center;
+    padding: 20px;
+    font-size: 28px;
+    font-family: Arial, sans-serif;
+    /* margin-top: 25px; */
+
+}
+
+main {
+    padding: 20px;
+}
+
+#home {
+    text-align: center;
+    /* padding: 20px; */
+}
+
+#home h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#home p {
+    font-size: 25px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+#home ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+#home li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Styling for the navigation bar */
+nav {
+    background-color: #00a99d;
+    position: fixed;
+    color: #fff;
+    padding: 10px 10px;
+    width: 100%;
+    margin-top: 0px;
+
+}
+
+/* Style the navigation bar on hover */
+nav a:hover {
+    border-bottom: 2px solid #fff;
+}
+
+nav ul {
+    background-color: #333;
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    border-radius: 20px;
+
+}
+
+nav li {
+    display: inline;
+    margin-right: 35px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    /* Adjust the font size as needed */
+    font-style: italic;
+    /* Specify your desired font style */
+}
+
+/* CSS for the patient records section */
+#patient-records {
+    padding: 20px;
+    text-align: center;
+}
+
+#add-patient-button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+#add-patient-button:hover {
+    background-color: #0056b3;
+}
+
+#patient-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#patient-list li {
+    margin-bottom: 10px;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style patient list items individually */
+#patient-list li:nth-child(odd) {
+    background-color: #e0e0e0;
+}
+
+/* CSS for the appointments section */
+#appointments {
+    padding: 20px;
+    text-align: center;
+}
+
+#appointment-form {
+    text-align: left;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+#appointment-form h3 {
+    margin-top: 0;
+}
+
+#appointment-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#appointment-form input[type="text"],
+#appointment-form input[type="date"],
+#appointment-form input[type="time"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#appointment-form button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#appointment-form button:hover {
+    background-color: #0056b3;
+}
+
+#appointment-list {
+    text-align: left;
+}
+
+.appointment-item {
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Style appointment list items individually */
+.appointment-item:nth-child(odd) {
+    background-color: #f0f0f0;
+}
+
+/* CSS for the content of the "View Information about Doctors" section */
+#doctor-info {
+    text-align: center;
+}
+
+/* CSS for styling the list of doctors */
+.doctor-list {
+    list-style-type: none;
+    /* Remove list bullets */
+    padding: 0;
+}
+
+.doctor-list-item {
+    background-color: #f7f7f7;
+    /* Background color for each list item */
+    border: 1px solid #ccc;
+    /* Border for each list item */
+    margin-bottom: 20px;
+    /* Spacing between list items */
+    padding: 15px;
+    /* Padding within each list item */
+    border-radius: 10px;
+    /* Rounded corners for each list item */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Add a subtle shadow to each list item */
+    display: flex;
+    /* Display list items in a row */
+    align-items: center;
+    /* Center items vertically in the row */
+}
+
+.doctor-list-item img {
+    width: 100px;
+    /* Set the width of the doctor's image */
+    height: 100px;
+    /* Set the height of the doctor's image */
+    margin-right: 20px;
+    /* Spacing between the image and text */
+    border-radius: 50%;
+    /* Make the image circular */
+}
+
+.doctor-name {
+    font-weight: bold;
+    /* Make the doctor's name bold */
+}
+
+.doctor-specialty {
+    color: #007BFF;
+    /* Color for the doctor's specialty */
+}
+
+/* Media query for responsive design (adjust as needed) */
+@media (max-width: 768px) {
+    .doctor-list-item {
+        flex-direction: column;
+        /* Stack items vertically on smaller screens */
+        text-align: center;
+        /* Center-align text on smaller screens */
+    }
+
+    .doctor-list-item img {
+        margin: 0 auto 10px;
+        /* Center the image and add spacing below it */
+    }
+}
+
+/* CSS for background color */
+body {
+    background-color: #00a99d;
+    /* Replace with your desired background color */
+    /* CSS to increase font size for the entire webpage */
+    font-size: 18px;
+    /* Adjust the font size as needed */
+    font-family: Arial, sans-serif;
+    /* Specify your desired font family */
+
+
+}
+
+/* CSS for navigation bar font size and font style */
+
+/* Add media query for smaller screens */
+@media (max-width: 768px) {
+    /* Add any responsive styling here */
+}
+
+/* CSS for the patient records management form */
+#patient-records {
+    padding: 20px;
+    text-align: center;
+}
+
+
+#patient-form {
+    text-align: left;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#patient-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#patient-form input[type="text"],
+#patient-form input[type="number"],
+#patient-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#patient-form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+#patient-form button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#patient-form button:hover {
+    background-color: #0056b3;
+}
+
+#patient-list {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+}
+
+#patient-list li {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* CSS for styling images on the home page */
+/* CSS to give a gap between two images on the home page */
+#home img {
+    display: block;
+    margin: 0 auto;
+    /* Center the image horizontally */
+    max-width: 40%;
+    /* Ensure images don't exceed their container width */
+    height: auto;
+    /* Maintain the image's aspect ratio */
+    /* border: 2px solid #007BFF; Add a border around the image */
+    border-radius: 10px;
+    /* Round the corners of the image */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    /* Add a subtle shadow to the image */
+    margin-bottom: 20px;
+    /* Add margin at the bottom to create a gap between images */
+}
+
+footer img {
+    width: 30px;
+    height: 30px;
+}
+
+/* CSS for styling the footer */
+footer {
+    background-color: #00a99d;
+    /* Background color for the footer */
+    color: #100d0d;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    border-top: 2px solid #00a99d;
+    /* Border at the top of the footer */
+}
+
+/* CSS for styling social media icons */
+.social-media {
+    margin-top: 10px;
+}
+
+.social-media a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-media a img {
+    width: 30px;
+    /* Adjust the size of the social media icons */
+    height: 30px;
+    border: none;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Add hover effect to social media icons */
+.social-media a img:hover {
+    transform: scale(1.2);
+    /* Increase the size on hover */
+}
+.centre{
+
+    display:flex;
+    justify-content:center;
+
+
+
+}
+button {
+  padding: 10px 20px; /* Add padding to the button */
+  background-color: #007BFF; /* Background color */
+  color: #fff; /* Text color */
+  border: none; /* Remove button border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Add a pointer cursor on hover */
+  text-decoration:none;
+}
+
+/* Style the button on hover */
+button:hover {
+  background-color: #0056b3; /* Change the background color on hover */
+}
+/* Style for the About Us section */
+#about-us {
+    background-color: #f8f8f8;
+    padding: 20px;
+}
+
+#about-us h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#about-us h3 {
+    font-size: 24px;
+    color: #555;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#about-us p {
+    font-size: 16px;
+    color: #777;
+    line-height: 1.5;
+}
+
+/* Style for the contact information
